@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sou novo por aqui</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <h1>Quem é você?</h1>
+        <div class="dropdown">
+            <details>
+                <summary>Cliente</summary>
+                <form>
+
+                     <!-- Label e Input do CPF -->
+                     <label for="CPF">CPF:</label>
+                     <input name="CPF" id="CPF"  placeholder="99999999999" required>
+                   
+                    <!-- Label e Input do E-mail -->
+                    <label for="E-mail">E-mail:</label>
+                    <input name="E-mail" id="E-mail" type="email" placeholder="teste@gmail.com" required>
+    
+                    <!-- Label e Input da Senha -->
+                    <label for="Senha">Senha:</label>
+                    <input name="Senha" id="Senha" type="password" placeholder="**************" required>
+    
+                    <!-- Botão Cadastrar -->
+                    <div class="botao">
+                        <button onclick="alert('Cliente cadastrado com sucesso!')" type="submit">Cadastrar</button>
+                    </div>
+                    
+                </form>
+            </details>
+        </div>
+
+        <div class="dropdown">
+            <details>
+                <summary>Funcionário</summary>
+                <form>
+
+                    <!-- Label e Input do CPF -->
+                    <label for="CPF">CPF:</label>
+                    <input name="CPF" id="CPF"  placeholder="99999999999" required>
+                  
+                   <!-- Label e Input do E-mail -->
+                   <label for="E-mail">E-mail:</label>
+                   <input name="E-mail" id="E-mail" type="email" placeholder="teste@gmail.com" required>
+   
+                   <!-- Label e Input da Senha -->
+                   <label for="Senha">Senha:</label>
+                   <input name="Senha" id="Senha" type="password" placeholder="**************" required>
+   
+                   <!-- Botão Cadastrar -->
+                   <div class="botao">
+                        <button onclick="alert('Funcionário cadastrado com sucesso!')" type="submit">Cadastrar</button>
+                   </div>
+                   
+               </form>
+            </details>
+        </div>
+        </details>
+    </div>
+</body>
+</html>

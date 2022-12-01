@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cliente</title>
+    
+</head>
+<body>
+        <header class="perfil">
+            <h1><img src="../img/Logo-Funcionario.png" alt="Logo Do Adimo"></h1>
+        </header>        
+        <section class="baseCliente">
+            <!-- Alteração para funciona no css -->
+
+            <div class="estrutura-bem-vindo">
+                <!-- Criado class img-pessoa -->
+                <img class="img-pessoa" src="../img/img_pessoa_casa.png" alt="pessoa-casa">
+
+                <div class="bemVindo">
+                    <!-- span para mudar a cor apenas de Wilson -->
+                    <h2 class="titulo-cliente">Bem-Vindo, <span class="destaque"> @Wilson!</span></h2>
+                    <p>Deseja enviar mensagem para nossos corretores?</p>
+                    <label for="mensagem">Digite sua mensagem</label>
+                    <!-- Classe criada para o css -->
+                    <form class="formulario-estrutura">
+                        <textarea class="input" name="mensagem" id="mensagem" cols="60" rows="6"></textarea><br>
+                        <button class="botao" type="submit" name="enviar" id="enviar">enviar</button>
+                    </form>
+                </div>
+            </div>
+          
+        </section>
+
+
+        <section class="agendarVisita">
+            <h2 class="titulo-endereco">Minhas Visitas Agendadas</h2>
+
+            <div class="visitaAgendada">       
+                    <img class="img-casa" src="../img/img-casa.png" alt="casa">
+
+                    <div class="estrutura-endereco">
+                        <h2>Endereço</h2>
+                        <p class="texto-endereco">rua xxx, numero 115, bairro jurubatuba, cidade São Paulo, cep 02222-000</p>
+                        <p class="texto-endereco"><b>Corretor(a):</b> Maria do Rosario</p>
+                        <p class="texto-endereco"><b>Data:</b> 12/12/2012</p>
+                        <p class="texto-endereco"><b>Horário:</b> 19:00</p>
+                        <button class="botao">
+                            <a class='botao' href="#cancelar">cancelar visita</a>
+                        </button>
+                        <button class="botao">
+                            novo agendamento
+                        </button>
+                        
+                    </div>
+                   
+            </div>
+        </section>
+
+
+        <section class="documentos-e-aluguel">
+            <h1> Documentação </h1>
+            
+            <div class="documentação-base">
+            
+                <div class="estrutura-documento">
+                    <h1 class="titulo-documentacao">Documentação anexada</h1>
+                    <ul>
+                            <div class="documentacao">
+                                <span class="container-documento-1">
+                                    <img class="img-pdf" src="../img/pdf_logo.png" alt="termo.pdf">
+                                    <li><a href="documentos/termo.pdf">Termo de compromiço</a></li>
+                                </span>
+        
+                                <span class="container-documento-2">
+                                    <img class="img-pdf" src="../img/pdf_logo.png" alt="contratoFinal.pdf">
+                                    <li>            
+                                        <a href="documentos/contratoFinal.pdf">contrato final</a>        
+                                    </li>
+                                   
+                                </span>
+                            </ul>
+                        </div>
+ 
+                        <div class="aluguel">
+                                
+                            
+
+                            <div class="estrutura-aluguel">
+                                <h2 class="titulo-documentacao">Aluguel</h2>
+
+                                <ul>
+                                    <span class="containe-aluguel-1">
+                                        <img class="img-pdf" src="../img/pdf_logo.png" alt="boletoMensal.pdf">
+                                        <li>    
+                                            <a href="documentos/boletoMensal.pdf"> Boleto mensal </a>        
+                                        </li>
+                                        
+                                    </span>
+
+                                    <span class="container-aluguel-2">
+                                        <img class="img-pdf" src="../img/pdf_logo.png" alt="comprovanteDeposito.pdf">
+                                        <li>            
+                                            <a class="img-pdf" href="documentos/comprovanteDeposito.pdf">Comprovante deposito </a>
+                                        </li>
+                                            
+                                    </span>
+                            </div>
+                        </div> 
+        </section>
+
+    <section class="cancelamento">
+
+        <div class="formularioCancelamento">
+            <h1 class="cancelar">Formulário de solicitação cancelamento aluguel</h1>
+            <form action="https://www.google.com" method="GET">
+
+                <div class="estrutura-forms">
+                    <div class="enderenco">
+                            <span>
+                                <label for="rua">rua/avenida</label><br>
+                                <input class='input' type="text" name="rua" id="rua" required placeholder="digite o nome da rua ou avenida"><br>     
+                            </span>            
+                            
+                            <span>
+                                <label for="numero">número</label><br>
+                                <input class='input' type="text" name="numero" id="numero" required size="4" maxlength="4" placeholder="digite o número da residência ou condomínio"><br>
+                            </span>
+
+                            <span class="cep">
+                                <label for="cep">CEP</label><br>
+                                <input class="input"type="text" name="cep" id="cep" required size="8" maxlength="8" onkeypress="numeroCep(this)" onblur="pesquisacep(this.value)" placeholder="digite o número do CEP"><br>
+                            </span>
+                    </div>
+                    
+                    <div class="enderenco">
+                        <span class="bairro">
+                            <label for="bairro">bairro</label><br>
+                            <input class='input'type="text" name="bairro" id="bairro" required placeholder="digite o nome do seu bairro"><br>
+                        </span>
+                        
+                        <span>        
+                            <label for="cidade">cidade</label><br>
+                            <input class='input'type="text" name="cidade" id="cidade" required placeholder="digite o nome da sua cidade atual"><br>
+                        </span>
+                    </div>
+                   
+                    <div class="motivos">
+                        
+                        <p class="titulo-motivos">Conte-nos o motivo do seu cancelamento</p>
+
+                        
+
+                        <label for="mensagem">Motivos</label>
+                                    
+                      
+                            <textarea class="input" name="mensagem" id="mensagem" cols="60" rows="6"></textarea><br>
+                            <button class="botao" type="submit" name="enviar" id="enviar">enviar</button>
+                      
+                    </div>
+    
+           
+                
+                </div>
+                
+            </form>
+</form>
+</div>
+        </section>
+</body>
+</html>

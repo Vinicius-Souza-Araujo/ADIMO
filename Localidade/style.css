@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+h1{
+    font-size: 3rem;
+    margin-top: 40px;
+    font-family: "Bebas Neue"; 
+    color: #1C1A2F;
+    text-align: center;
+}
+
+p{
+    text-align: rigth;
+    font-family: "Hind Siliguri"; 
+    font-size: 20px;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul, li, a {
+    color: #F5F5F5;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu {
+    background-color: #1C1A2F;
+    font-size: 20px;
+    font-family: "Hind Siliguri"; 
+    padding: 16px;
+}
+
+
+.botao-entrar {
+    background-color: #C8EE43;
+    color: #1C1A2F;
+    padding: 6px 22px; 
+    border-radius: 14px;
+}
+
+.container-menu {
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    justify-items: center;
+    gap: 3rem;
+}
+
+.logo {
+    max-width: 9rem;
+    margin-left: 3px;
+    margin-top: 2px;
+    justify-items: center;
+}
+
+.img-pessoas-juntas{
+    max-width: 32rem;
+    margin: 20px;
+}
+
+.container-1{
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.texto{
+    font-size: 20px;
+    text-align: justify;
+    padding: 30px;
+}
+
+/* 
+IMAGEM DE MAPA */
+.container-localidade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.localidade{
+    max-width: 120rem;
+    padding: 30px;
+}
+
+@media (max-width: 700px) {
+    .menu {
+        
+        font-size: 15px;
+        
+    }
+
+    .container-menu{
+        gap: 1rem;
+    }
+
+    .logo{
+        display: none;
+    }
+   
+   
+}
+
+@media (max-width: 900px) {
+.img-pessoas-juntas{
+    display: none;
+}
+}
+
+@media (max-width: 700px) {
+    .localidade{
+        width: 400px;
+    }
+}

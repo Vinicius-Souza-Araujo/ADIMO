@@ -1,0 +1,131 @@
+/* imports de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Resetar css padrão */
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul, li, a {
+    color: #F5F5F5;
+    text-decoration: none;
+    list-style: none;
+
+}
+.texto{
+    color: #FFFF;
+    font-size: 16px;
+    text-align: left;
+    font-family: 'Arial';
+    margin: 60px;
+    margin-left: 80px;
+}
+
+body{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    
+}
+
+.menu {
+    background-color: #1C1A2F;
+    font-size: 20px;
+    font-family: "Hind Siliguri"; 
+    padding: 16px;
+}
+
+.container-menu {
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    justify-items: center;
+    gap: 3rem;
+}
+
+.logo {
+    max-width: 9rem;
+    margin-left: 3px;
+    margin-top: 2px;
+    justify-items: center;
+}
+
+.botao-entrar {
+    background-color: #C8EE43;
+    color: #1C1A2F;
+    padding: 6px 22px; 
+    border-radius: 14px;
+}
+
+
+.colaboradores{
+    width: 100%;
+}
+
+h1{
+    font-size: 5rem;
+    margin-top: 40px;
+    font-family: "Bebas Neue"; 
+    color: #1C1A2F;
+    text-align: center;
+}
+
+.titulo-missao{
+    color: #F5F5F5;
+    text-align: left;
+}
+
+.texto-sobre{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+    font-family: 'arial';
+    text-align: justify;
+}
+
+.missao{
+    display: flex;
+    background-color: #151326;
+    margin: 60px 0 60px 0;
+}
+
+.texto-visao{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 900px) {
+    .time{
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .menu {
+        
+        font-size: 15px;
+        
+    }
+
+    .container-menu{
+        gap: 1rem;
+    }
+
+    .logo{
+        display: none;
+    }
+   
+   
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Funcionario da Adimo</title>
+</head>
+<body>
+
+    <header>  
+        <img class="logo" src="../img/Logo-Funcionario.png" alt="Logo Do Adimo">
+    </header>
+
+    <section>
+        <div class='conjunto-inputs'>
+            <img class="img-pessoa" src="../img/pessoas_imagem.svg" alt="pessoa feliz">
+
+            <div class="estrutura-mensagem">
+                <h1> Bem vindo! <span class="texto-destaque">@usuario!</span></h1>
+                <p class="Subtitulo"> Envie uma mensagem rápida para o cliente! </p>
+                <span>
+                    <input type="text" class="input" placeholder="Nome cliente" aria-label="id cliente" class="nome">  
+                    <input type="text" class="input" placeholder="ID cliente" aria-label="id cliente" class="id-cliente">
+                </span>
+                <textarea name="Descricao" class="input" placeholder="Mensagem" aria-label="Mensagem"  class="Descricao" cols="20" rows="4"></textarea>
+
+                <button class="botao" type="submit">Enviar</button>
+            </div>
+
+        </div>
+        
+
+        <div class="conjunto-agendar">
+            
+            <div class="formulario-agendar">
+                <h1> Agende visita com o cliente! </h1>
+                <input type="text" class="input" placeholder="NOME CLIENTE" aria-label="nome cliente" class="nome">
+                <span>
+                    <input type="email" class="input" placeholder="E-MAIL CLIENTE" aria-label="email cliente" class="email-cliente">
+                    <input type="text" class="input" placeholder="CPF" aria-label="cpf" class="cpf">
+                    <input type="text" class="input" placeholder="ID CLIENTE" aria-label="id cliente" class="id-cliente">
+                </span>
+                <input type="text" class="input" placeholder="RUA" aria-label="rua" class="rua">  
+                <span>
+                    <input type="text" class="input" placeholder="N°" aria-label="Numero" class="numero">
+                    <input type="text" class="input" placeholder="CEP" aria-label="cep" class="cep">
+                    <input type="text" class="input" placeholder="BAIRRO" aria-label="bairro" class="bairro">
+                </span>
+
+               
+                <span>
+                    <input type="text" class="input" placeholder="CIDADE" aria-label="cidade" class="cidade">
+                    <input type="text" class="input" placeholder="UF" aria-label="uf" class="uf">
+                    <input type="datetime-local" name="" class="input">
+                </span>
+
+                <textarea name="Descricao" class="input" placeholder="Mensagem" aria-label="Mensagem"  class="Descricao" cols="20" rows="4"></textarea>
+                <button class="botao" type="submit">Enviar</button>
+                
+
+            </div>
+        </div>
+
+        <h1 class="titulos-agendados"> Clientes agendados </h1>
+
+        <div class="conjunto-proximas">
+            
+            <div class="agenda">
+                <div class="dados-cliente">
+                    
+                    <span class="dado-1">
+                        <p> <b>Nome do cliente:</b> Ricardo Almeira</p> 
+                        <p><b>Data:</b> 12/02/2023</p>
+                        <p><b>Horário:</b> 19:30</p>
+                        <p><b>Enderenço:</b> Rua São Frascisco, 2000, Jardim das Miradandas, São Paulo - SP </p>
+                        <span>
+                            <input class="input" type="checkbox" class="confirmado" name="confirmado">
+                            <label class="input" for="confirmado">Confirmado</label>
+
+                            <input class="input" type="checkbox" class="nao-confirmado" name="nao-confirmado">
+                            <label class="input" for="nao-confirmado">Não confirmado</label>
+                        </span>
+                        
+                    </span>
+
+                    <span class="dado-1">
+                        <p> <b>Nome do cliente:</b> Maria Lima</p> 
+                        <p><b>Data:</b> 22/04/2023</p>
+                        <p><b>Horário:</b> 20:30</p>
+                        <p><b>Enderenço:</b> Rua São Paulo Fernandes, 22, Jardim da Luz, São Paulo - SP </p>
+                        <span>
+                            <input class="input" type="checkbox" class="confirmado" name="confirmado">
+                            <label class="input" for="confirmado">Confirmado</label>
+
+                            <input class="input" type="checkbox" class="nao-confirmado" name="nao-confirmado">
+                            <label class="input" for="nao-confirmado">Não confirmado</label>
+                        </span>
+                        
+                    </span>
+                    
+                </div>         
+            </div>
+        </div>
+       
+    </section>
+    
+</body>
+</html>

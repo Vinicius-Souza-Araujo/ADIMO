@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #1C1A2F;
+}
+
+.box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+ 
+}
+
+
+ul, li, a {
+    color: #F5F5F5;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu {
+    background-color: #1C1A2F;
+    font-size: 20px;
+    font-family: "Hind Siliguri"; 
+    padding: 16px;
+}
+
+.container-menu {
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    justify-items: center;
+    gap: 3rem;
+}
+
+
+
+.logo {
+    max-width: 9rem;
+    margin-left: 3px;
+    margin-top: 2px;
+    justify-items: center;
+}
+
+.botao-entrar {
+    background-color: #C8EE43;
+    color: #1C1A2F;
+    padding: 6px 22px; 
+    border-radius: 14px;
+}
+
+
+input{
+    display: block;
+    border: 2px solid;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 6px;
+
+}
+
+textarea{
+    border: 2px solid;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 6px;
+}
+
+input:hover{
+    border: 2px solid #C8EE43;
+}
+
+
+button{
+    width: 100%; 
+    background-color: #C8EE43;
+    color:#1C1A2F;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #C8EE43;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+
+}
+
+
+
+button:active{
+    color: #F5F5F5;
+    background-color: #1C1A2F;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .box{
+        height: 70vh;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+
+    .box{
+        height: 80vh;
+    }
+    .menu {
+        
+        font-size: 15px;
+        
+    }
+
+    .container-menu{
+        gap: 1rem;
+    }
+
+    .logo{
+        display: none;
+    }
+   
+    h1{
+        margin-top: 0px;
+       }
+    
+        form{
+            margin-left: 40px;
+        }
+        label{
+            font-size: 15px;
+        }
+        
+        
+        input{
+            font-size: 15px;
+            width: 280px;
+        
+        }
+        
+        textarea{
+            width: 280px;
+            padding: 2px;
+        }
+    
+        button{
+            
+            font-size: 18px;
+            width: 200px;
+        
+        }
+   
+}
+
+
+@media (max-width: 400px) {
+    .box{
+        height: 80vh;
+    }
+   h1{
+    margin-top: 110px;
+   }
+
+    form{
+        margin-left: 10px;
+    }
+    label{
+        font-size: 15px;
+    }
+    
+    
+    input{
+        font-size: 15px;
+        width: 280px;
+    
+    }
+    
+    textarea{
+        
+        width: 280px;
+        padding: 2px;
+    }
+
+    button{
+        
+        font-size: 20px;
+        width: 280px;
+    
+    }
+    }
+
+    @media (max-width: 320px) {
+        h1{
+            margin-top: 200px;
+           }
+    }

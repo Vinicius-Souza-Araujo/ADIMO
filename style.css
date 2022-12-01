@@ -1,0 +1,139 @@
+/* imports de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Resetar css padrão */
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul, li, a {
+    color: #F5F5F5;
+    text-decoration: none;
+    list-style: none;
+}
+
+.menu {
+    background-color: #1C1A2F;
+    font-size: 20px;
+    font-family: "Hind Siliguri"; 
+    padding: 16px;
+}
+
+.container-menu {
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    justify-items: center;
+    gap: 3rem;
+}
+
+.logo {
+    max-width: 9rem;
+    margin-left: 3px;
+    margin-top: 2px;
+    justify-items: center;
+}
+
+.botao-entrar {
+    background-color: #C8EE43;
+    color: #1C1A2F;
+    padding: 6px 22px; 
+    border-radius: 14px;
+}
+
+
+.container-principal{
+    background-color: #1C1A2F;
+    padding: 30px;
+    gap: 10px;
+    color: #F5F5F5;
+    display: flex;
+}
+
+.titulo-familia{
+    align-items: flex-end;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 44px;
+    font-family: 'Bebas Neue';
+}
+
+.texto-principal{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 66px;
+}
+.titulo-melhores {
+    padding: 16px;
+    margin-left: 23px;
+    margin-top: 2px;
+    font-size: 22px;
+    font-family:"Hind Siliguri";
+ }
+
+.destaque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container-cards{
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    margin: 16px;
+    padding: 15px;
+    font-size: 25px;
+    font-family: "Hind Siliguri"; 
+    
+}
+
+.card-1, .card-2, .card-3, .card-4{
+    width: 200px;
+    margin: 10px;
+    padding: 40px;
+    background-color: #F3F3F3;
+    border: #C8EE43;
+}
+
+.footer-design {
+    background-color: #1C1A2F;
+}
+
+@media (max-width: 900px) {
+    .container-cards{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .img-familia{
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .menu {
+        
+        font-size: 15px;
+        
+    }
+
+    .container-menu{
+        gap: 1rem;
+    }
+
+    .logo{
+        display: none;
+    }
+   
+   
+}

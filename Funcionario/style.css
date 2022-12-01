@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+p{
+    color: #FFFF;
+    font-size: 12px;
+    font-family: 'Arial';
+    margin: 10px;
+}
+
+*, a{
+    color: #ffff;
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    font-size: 'Arial';
+}
+
+body{
+    background-color: #1C1A2F;
+}
+
+header {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.logo{
+    max-width: 46px;
+    padding: 20px;
+}
+
+
+.container-texto{
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: 'Arial';
+}
+
+.texto-destaque{
+    color: #C8EE43;
+}
+
+.Subtitulo{
+    font-size: 18px;
+    font-family: 'Arial';
+    padding: 4px;
+}
+
+.conjunto-inputs{
+    display: flex;
+    margin: 80px;
+    background: #151326;
+    width: 70rem;
+    border-radius: 2rem;
+    height: 20rem;
+}
+
+.estrutura-mensagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botao{
+    background-color: #C8EE43;
+    color: #1C1A2F;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 6px;
+    transition-duration: 0.5s;
+
+}
+
+.botao:hover{
+    background-color: #95b034;
+}
+
+.img-pessoa{
+    align-items: flex-start;
+    max-width: 19rem;
+    padding: 10px;
+    margin: 4rem;
+    background-color: #151326;
+}
+
+.input{
+    border: none;
+    padding: 6px;
+    max-width: 89rem;
+    border-radius: 4px;
+    background-color: #242139;
+}
+
+.input:hover{
+    border: solid #95b034 0.5px;
+}
+
+
+.conjunto-agendar{
+    display: flex;
+    justify-content: center;
+    background-color: #151326;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+
+.formulario-agendar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conjunto-proximas{
+    display: flex;
+    justify-content: center;
+    background-color: #151326;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.dados-cliente{
+    display: flex;
+    gap: 10px;
+}
+
+.titulos-agendados{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 60px;
+}
+
+.dado-1{
+    background-color: #302c4a;
+    border-radius: 4px;
+    padding: 20px;
+}
+@media (max-width: 900px) {
+    .img-pessoa{
+        display: none;
+    }
+
+    .conjunto-inputs{
+        
+        width: 80%;
+        height: 100vh;
+        padding: 30px;
+        margin: 0px;
+        margin-left: 35px;
+        
+        
+    }
+
+    .estrutura-mensagem{
+        gap: 5px;
+        
+    }
+
+   
+}
+
+@media (max-width: 700px) {
+    .img-pessoa{
+        display: none;
+    }
+
+    .conjunto-inputs{
+        
+        width: 80%;
+        height: 100vh;
+        padding: 30px;
+        margin: 0px;
+        margin-left: 10px;
+        
+        
+    }
+
+    .estrutura-mensagem{
+        gap: 5px;
+        
+    }
+
+   
+}
